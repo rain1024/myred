@@ -1,0 +1,11 @@
+FROM bitnami/redmine:4.0.1-debian-9-r21
+
+RUN install_packages build-essential default-libmysqlclient-dev libpq-dev libmagickwand-dev
+
+WORKDIR /opt/bitnami/redmine
+
+# COPY scrum /opt/bitnami/redmine/plugins/scrum
+
+COPY redmine_agile /opt/bitnami/redmine/plugins/redmine_agile
+
+RUN bundle install --no-deployment
