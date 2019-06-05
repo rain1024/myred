@@ -7,5 +7,6 @@ WORKDIR /opt/bitnami/redmine
 # COPY scrum /opt/bitnami/redmine/plugins/scrum
 
 COPY redmine_agile /opt/bitnami/redmine/plugins/redmine_agile
+COPY circle /opt/bitnami/redmine/public/themes/circle
 
 RUN bundle install --no-deployment
