@@ -1,4 +1,4 @@
-# My Custom Redmine Compose 
+# My Redmine Compose 
 
 ## Usage
 
